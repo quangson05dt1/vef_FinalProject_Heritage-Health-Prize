@@ -6,5 +6,5 @@ This is final project in course ML2020 at VEF
 <p>This project using data from <a href="https://foreverdata.org/1015/index.html">Forever Data</a> 
 </p>
 <p>
-Pretrained FaceNet model was created by <a href="https://drive.google.com/drive/folders/1pwQ3H4aJ8a6yyJHZkTwtjcL4wYWQb7bn">Hiroki Taniai</a> download here.</p>
+Feature Engineering is based on an idea <a href="https://foreverdata.org/1015/content/milestone1-2.pdf">Milestone 1-2 PDF</a> download here.</p>
 
