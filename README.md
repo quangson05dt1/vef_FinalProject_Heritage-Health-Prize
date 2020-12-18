@@ -1,2 +1,2 @@
 # vef_FinalProject_Heritage-Health-Prize
-This is final prj in course ML2020 at VEF
+This is final project in course ML2020 at VEF
