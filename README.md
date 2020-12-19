@@ -365,7 +365,14 @@ Shape(218415, 145)
 - Score: 
 
         RMSLE :0.4973750668347952, R2: 0.00395234419702728
-
+        
+## Ridge Regression:
+- Best parameter:
+        
+        alpha=0.304585534067427
+- Score: 
+        
+        RMSLE: 0.5008227464703024, R2: 0.03714390073347551
 ## Logistic Regression:
 - hyper parameters:
 
@@ -398,18 +405,19 @@ Using RadomForestRegestion to pre-train and get features importance.
 
 - Base on the correlation between the number of features and scores of RMSLE/R2. We have selected 12 most important features to create interaction variables by multiplying them together, creating 90 other variables.
 
-     'no_Claims',
-     'MissSex',
-     'ClaimsTruncated',
-     'AgeAtFirstClaim',
-     'CharlsonIndex_sum',
-     'DSFS_sum',
-     'PrimaryConditionGroup_Count_PRGNCY',
-     'Specialty_Count_Emergency',
-     'PlaceSvc_Count_Inpatient Hospital',
-     'DrugCount_ave',
-     'DrugCount_total',
-     'PrimaryConditionGroup_Count_RENAL2'
+         'no_Claims',
+         'MissSex',
+         'ClaimsTruncated',
+         'AgeAtFirstClaim',
+         'CharlsonIndex_sum',
+         'DSFS_sum',
+         'PrimaryConditionGroup_Count_PRGNCY',
+         'Specialty_Count_Emergency',
+         'PlaceSvc_Count_Inpatient Hospital',
+         'DrugCount_ave',
+         'DrugCount_total',
+         'PrimaryConditionGroup_Count_RENAL2'
+         
 ## Neuron Network
 - Hyper parameters:
 
@@ -439,3 +447,30 @@ Using RadomForestRegestion to pre-train and get features importance.
     
 # 4.Evaluation 
 <a href="https://drive.google.com/drive/folders/1pwQ3H4aJ8a6yyJHZkTwtjcL4wYWQb7bn">Click here go to folder</a>
+
+    VotingRegressor(estimators=[('gbm',
+                                 GradientBoostingRegressor(learning_rate=0.00523960135300263,
+                                                           max_depth=7,
+                                                           min_samples_leaf=100,
+                                                           n_estimators=1000,
+                                                           verbose=1)),
+                                ('rfr',
+                                 RandomForestRegressor(max_depth=10,
+                                                       min_samples_leaf=5,
+                                                       min_samples_split=500,
+                                                       n_estimators=1000, n_jobs=-1,
+                                                       verbose=1)),
+                                ('linear', LinearRegression()),
+                                ('mlp',
+                                 MLPRegressor(hidden_layer_sizes=1, max_iter=1000,
+                                              verbose=1)),
+                                ('ridge',
+                                 Ridge(alpha=0.304585534067427, max_iter=5000,
+                                       tol=0.0001))], n_jobs=-1, verbose=1)
+                                       
+      score:
+      gbm:      RMSLE: 0.49282791998478126, R2: 0.016498064659897227
+      rfr:      RMSLE: 0.4931522108580743, R2: 0.010057526876011247
+      linear:   RMSLE :0.4973750668347952, R2: 0.00395234419702728
+      mlp:      RMSLE: 0.49674135308441153, R2: 0.010736835934658795
+      ridge:    RMSLE: 0.5008227464703024, R2: 0.03714390073347551
