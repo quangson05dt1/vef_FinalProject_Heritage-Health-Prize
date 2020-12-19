@@ -362,27 +362,27 @@ Shape(218415, 145)
 <a href="https://github.com/quangson05dt1/vef_FinalProject_Heritage-Health-Prize/tree/main/3.Modelling">Click here go to folder</a>
 
 ## Linear Regression:
-Score: 
+- Score: 
 
         RMSLE :0.4973750668347952, R2: 0.00395234419702728
 
 ## Logistic Regression:
-hyper parameters:
+- hyper parameters:
 
-    ({'C': 0.1, 'penalty': 'l2', 'solver': 'saga'},LogisticRegression(C=0.1, n_jobs=-1, solver='saga', verbose=1))
-Score:  
+      ({'C': 0.1, 'penalty': 'l2', 'solver': 'saga'},LogisticRegression(C=0.1, n_jobs=-1, solver='saga', verbose=1))
+- Score:  
 
-                  precision  recall  f1-score   support
-         0.0       0.85      0.99      0.92     37481
-         1.0       0.51      0.04      0.08      6761
+                      precision  recall  f1-score   support
+             0.0       0.85      0.99      0.92     37481
+             1.0       0.51      0.04      0.08      6761
 
-    accuracy                           0.85     44242
-    AUC = 0.6986855137500797
+        accuracy                           0.85     44242
+        AUC = 0.6986855137500797
     
 ## Random Forest Regression
-  Score:
+- Score:
  
-    RMSLE: 0.4931522108580743, R2: 0.010057526876011247
+      RMSLE: 0.4931522108580743, R2: 0.010057526876011247
  
 ## Processing Choice features - Create interaction variant
 Using RadomForestRegestion to pre-train and get features importance.
