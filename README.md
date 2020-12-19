@@ -370,7 +370,7 @@ Score:
 hyper parameters:
 
     ({'C': 0.1, 'penalty': 'l2', 'solver': 'saga'},LogisticRegression(C=0.1, n_jobs=-1, solver='saga', verbose=1))
-Score  
+Score:  
 
                   precision  recall  f1-score   support
          0.0       0.85      0.99      0.92     37481
@@ -395,6 +395,7 @@ Using RadomForestRegestion to pre-train and get features importance.
 
 - R2 vs number feature:
 <img src="https://github.com/quangson05dt1/vef_FinalProject_Heritage-Health-Prize/blob/main/imgsrc/r2_noFeature.png">
+
 - Base on the correlation between the number of features and scores of RMSLE/R2. We have selected 12 most important features to create interaction variables by multiplying them together, creating 90 other variables.
 
      'no_Claims',
@@ -410,9 +411,31 @@ Using RadomForestRegestion to pre-train and get features importance.
      'DrugCount_total',
      'PrimaryConditionGroup_Count_RENAL2'
 ## Neuron Network
+- Hyper parameters:
+
+        (activation='relu', alpha=0.0001, batch_size='auto', beta_1=0.9,
+                beta_2=0.999, early_stopping=False, epsilon=1e-08,
+                hidden_layer_sizes=1, learning_rate='constant',
+                learning_rate_init=0.001, max_iter=1000, momentum=0.9,
+                nesterovs_momentum=True, power_t=0.5, random_state=None,
+                shuffle=True, solver='adam', tol=0.0001, validation_fraction=0.1,
+                verbose=1, warm_start=False)
 
 
-## 6_Gradient Boosting
+- Score:
 
+        RMSLE: 0.49674135308441153, R2: 0.010736835934658795
+
+## Gradient Boosting
+- Hyper parameters:
+    
+        (
+          n_estimators=1000, learning_rate= 0.00523960135300263,
+          max_depth = 7, min_samples_leaf=100, verbose =1)
+      
+- Score:
+
+        RMSLE: 0.49282791998478126, R2: 0.016498064659897227
+    
 # 4.Evaluation 
 <a href="https://drive.google.com/drive/folders/1pwQ3H4aJ8a6yyJHZkTwtjcL4wYWQb7bn">Click here go to folder</a>
