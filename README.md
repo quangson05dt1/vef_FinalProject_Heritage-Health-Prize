@@ -22,13 +22,13 @@ Feature Engineering is based on an idea <a href="https://foreverdata.org/1015/co
     │   ├── 3_drugs_preprocess.ipynb
     │   ├── 4_LabCount_Preprocess.ipynb
     │   └── 5_merge_all.ipynb
-    ├── 3.Modelling
-    │   ├── 1_linear-regression.ipynb
-    │   ├── 2_Logistic-Regression.ipynb
-    │   ├── 3_random-forest-regression.ipynb
-    │   ├── 4_Processing-Choice feature.ipynb
-    │   ├── 5_Neuron_network.ipynb
-    │   └── 6_gradient-boosting-classifier.ipynb
+    ├── 3.Modelling <─────────────────────────────────────┐
+    │   ├── 1_linear-regression.ipynb                     |
+    │   ├── 2_Logistic-Regression.ipynb                   |
+    │   ├── 3_random-forest-regression.ipynb              |
+    │   ├── 4_Neuron_network.ipynb                        |
+    │   ├── 5_gradient-boosting-classifier.ipynb          |
+    │   └── 6_Processing-Choice feature.ipynb ────────────┘
     └── 4.Evaluation
         ├── voting-model.ipynb ───> result.csv
         └── voting-model-newdata feature.ipynb ───> result_2.csv
@@ -390,33 +390,6 @@ Shape(218415, 145)
 - Score:
  
       RMSLE: 0.4931522108580743, R2: 0.010057526876011247
- 
-## Processing Choice features - Create interaction variant
-Using RadomForestRegestion to pre-train and get features importance.
-### Features importance:
-<img src="https://github.com/quangson05dt1/vef_FinalProject_Heritage-Health-Prize/blob/main/imgsrc/Feature_Importances_all.png">
-
-### Choice number features to create interaction variant
-- RMSLE vs number feature:
-<img src="https://github.com/quangson05dt1/vef_FinalProject_Heritage-Health-Prize/blob/main/imgsrc/rmsle_noFeature.png">
-
-- R2 vs number feature:
-<img src="https://github.com/quangson05dt1/vef_FinalProject_Heritage-Health-Prize/blob/main/imgsrc/r2_noFeature.png">
-
-- Base on the correlation between the number of features and scores of RMSLE/R2. We have selected 12 most important features to create interaction variables by multiplying them together, creating 90 other variables.
-
-         'no_Claims',
-         'MissSex',
-         'ClaimsTruncated',
-         'AgeAtFirstClaim',
-         'CharlsonIndex_sum',
-         'DSFS_sum',
-         'PrimaryConditionGroup_Count_PRGNCY',
-         'Specialty_Count_Emergency',
-         'PlaceSvc_Count_Inpatient Hospital',
-         'DrugCount_ave',
-         'DrugCount_total',
-         'PrimaryConditionGroup_Count_RENAL2'
          
 ## Neuron Network
 - Hyper parameters:
@@ -444,7 +417,35 @@ Using RadomForestRegestion to pre-train and get features importance.
 - Score:
 
         RMSLE: 0.49282791998478126, R2: 0.016498064659897227
-    
+ 
+ ## Processing Choice features - Create interaction variant
+Using RadomForestRegestion to pre-train and get features importance.
+### Features importance:
+<img src="https://github.com/quangson05dt1/vef_FinalProject_Heritage-Health-Prize/blob/main/imgsrc/Feature_Importances_all.png">
+
+### Choice number features to create interaction variant
+- RMSLE vs number feature:
+<img src="https://github.com/quangson05dt1/vef_FinalProject_Heritage-Health-Prize/blob/main/imgsrc/rmsle_noFeature.png">
+
+- R2 vs number feature:
+<img src="https://github.com/quangson05dt1/vef_FinalProject_Heritage-Health-Prize/blob/main/imgsrc/r2_noFeature.png">
+
+- Base on the correlation between the number of features and scores of RMSLE/R2. We have selected 12 most important features to create interaction variables by multiplying them together, creating 90 other variables.
+
+         'no_Claims',
+         'MissSex',
+         'ClaimsTruncated',
+         'AgeAtFirstClaim',
+         'CharlsonIndex_sum',
+         'DSFS_sum',
+         'PrimaryConditionGroup_Count_PRGNCY',
+         'Specialty_Count_Emergency',
+         'PlaceSvc_Count_Inpatient Hospital',
+         'DrugCount_ave',
+         'DrugCount_total',
+         'PrimaryConditionGroup_Count_RENAL2'
+ 
+ 
 # 4.Evaluation 
 <a href="https://drive.google.com/drive/folders/1pwQ3H4aJ8a6yyJHZkTwtjcL4wYWQb7bn">Click here go to folder</a>
 
