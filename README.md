@@ -11,7 +11,7 @@ Feature Engineering is based on an idea <a href="https://foreverdata.org/1015/co
     Project
     ├── 0.Data
     │ 
-    ├── 1.Exploration
+    ├── 1.Exploration <a href="https://github.com/quangson05dt1/vef_FinalProject_Heritage-Health-Prize/tree/main/1.Exploration">
     │   ├── Explore_Raw Data.ipynb
     │   └── Explore_Feature after process.ipynb <──┐
     │                                              │ 
