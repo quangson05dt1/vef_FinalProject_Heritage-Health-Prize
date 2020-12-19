@@ -41,13 +41,49 @@ This is step exploring raw data and feature data after processing in step 2.
 ## Expore raw data
 This step tells us the data structure, the data form, some data visualization so we know what to do with this data before we put it into model training.
 
+Data dictionaty:
+    Members Data Table
+        MemberID: Member pseudonym.
+        AgeAtFirstClaim: Age in years at the time of the first claim’s date of service computed froM the date of birth; Generalized into ten year age intervals.
+        Sex: Biological sex of member: M = Male; F=Female.
+    Claims (Level 2) Data
+        MemberID: Member pseudonym.
+        ProviderID: Provider pseudonym.
+        Vendor: Vendor pseudonym.
+        PCP: Primary care physician pseudonym.
+        Year: Year in which the claim was made: Y1; Y2; Y3.
+        Specialty: Generalized specialty.
+        PlaceSvc: Generalized place of service.
+        PayDelay: Number of days delay between the date of service (the date the actual procedure was performed or service provided) and date of payment 
+        LengthOfStay: Length of stay (discharge date – admission date + 1)
+        DSFS: Days since first claim, computed from the first claim for that member for each year.
+        PrimaryConditionGroup: Broad diagnostic categories, based on the relative similarity of diseases and mortality rates
+        CharlsonIndex: A measure of the affect diseases have on overall illness, grouped by significance, that generalizes additional diagnoses.
+        ProcedureGroup: Broad categories of procedures, grouped according to the hierarchical structure defined by the Current Procedural Terminology (CPT) [3].
+        SupLOS: Indicates if the NULL value for the LengthOfStay variable is due to suppression done during the de-identification process. A value of 1 indicates
+        that suppression was applied.
+  Drug Count Data
+        Year: Year in which the drug prescription was filled: Y1; Y2; Y3.
+        DSFS: Days since first service (or claim), computed from the first claim for that member for each year
+        DrugCount: Count of unique prescription drugs filled by DSFS. 
+  Lab Count Data
+        Year: Year in which the drug prescription was filled: Y1; Y2; Y3.
+        DSFS: Days since first service (or claim), computed from the first claim for that member for each year
+        
+Outcome Data
+        MemberID Member pseudonym.
+        DaysInHospital_Y2: Days in hospital, the main outcome, for members with claims in Y1. Values above 14 days (the 99% percentile) are top-coded as “15+”.
+        DaysInHospital_Y3 Days in hospital, the main outcome, for members with claims in Y2. Values above 14 days (the 99% percentile) are top-coded as “15+”.
+        ClaimedTruncated Members with truncated claims in the year prior to the main outcome are assigned a value of 1, and 0 otherwise.
+
+
 Giải thích thuật ngữ:
 
     Bảng Members Table
         MemberID: id của bệnh nhân (mỗi bệnh nhân chỉ có 1 id duy nhất cho tất cả các lần claim bảo hiểm)
         AgeAtFirstClaim: tuổi của bệnh nhân ghi nhận ở lần claim đầu tiên
         Sex: giới tính 
-    Bảng Claims Table
+    Claims Table
         MemberID: id của bệnh nhân
         ProviderID: id của Bác sĩ / Nhân viên y tế chăm sóc cho bệnh nhân đó
         Vendor: đơn vị xuất hoá đơn viện phí (chẳng hạn bệnh viên, phòng khám,....)
@@ -63,7 +99,7 @@ Giải thích thuật ngữ:
         ProcedureGroup (a generalization of the CPT code or treatment code): mã số nhóm điều trị
         SupLOS (suppressed Length of stay): đánh dấu LengthOfStay có null hay không
     Labs Table: chứa kết quả các chỉ số xét nghiệm.
-    RX Table: chứa thông tin các loại thuốc được kê đơn.
+    Drug Table: chứa thông tin các loại thuốc được kê đơn.
     DaysInHospital Tables: chứa thông tin về số ngày nằm viện của bệnh nhan.
         MemberID: id của bệnh nhân
         ClaimsTruncated: đánh dấu nếu claim của bệnh nhân bị truncated (giả sử hoá đơn của bệnh nhân là $1000, nhưng bảo hiểm chỉ chi trả $800 thì claim đó là truncated). Nếu biến này là 1 cho một bệnh nhân nào đó trong DaysInHospital_Y2 thì có nghĩa là bệnh nhân đó đã từng có truncated trong Y1.
