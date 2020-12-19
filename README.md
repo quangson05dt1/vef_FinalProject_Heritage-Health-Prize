@@ -63,6 +63,23 @@ shape(2668990, 14)
   </thead>
   <tbody>
     <tr>
+      <th>Type</th>
+      <td>int64</td>
+      <td>float64</td>
+      <td>float64</td>
+      <td>float64</td>
+      <td>object</td>
+      <td>object</td>
+      <td>object</td>
+      <td>object</td>
+      <td>object</td>
+      <td>object</td>
+      <td>object</td>
+      <td>object</td>
+      <td>object</td>
+      <td>int64</td>
+    </tr>
+    <tr>
       <th>0</th>
       <td>42286978</td>
       <td>8013252.0</td>
@@ -146,48 +163,6 @@ shape(2668990, 14)
       <td>1-2</td>
       <td>EM</td>
       <td>0</td>
-    </tr>
-  </tbody>
-</table>
-
-Datatype:
-<table class="dataframe" border="1">
-  <thead>
-    <tr>
-      <th></th>
-      <th>MemberID</th>
-      <th>ProviderID</th>
-      <th>Vendor</th>
-      <th>PCP</th>
-      <th>Year</th>
-      <th>Specialty</th>
-      <th>PlaceSvc</th>
-      <th>PayDelay</th>
-      <th>LengthOfStay</th>
-      <th>DSFS</th>
-      <th>PrimaryConditionGroup</th>
-      <th>CharlsonIndex</th>
-      <th>ProcedureGroup</th>
-      <th>SupLOS</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>Type</th>
-      <td>int64</td>
-      <td>float64</td>
-      <td>float64</td>
-      <td>float64</td>
-      <td>object</td>
-      <td>object</td>
-      <td>object</td>
-      <td>object</td>
-      <td>object</td>
-      <td>object</td>
-      <td>object</td>
-      <td>object</td>
-      <td>object</td>
-      <td>int64</td>
     </tr>
   </tbody>
 </table>
