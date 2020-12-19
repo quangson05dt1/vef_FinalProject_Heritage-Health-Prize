@@ -447,7 +447,7 @@ Using RadomForestRegestion to pre-train and get features importance.
  
  
 # 4.Evaluation 
-<a href="https://drive.google.com/drive/folders/1pwQ3H4aJ8a6yyJHZkTwtjcL4wYWQb7bn">Click here go to folder</a>
+<a href="https://github.com/quangson05dt1/vef_FinalProject_Heritage-Health-Prize/tree/main/4.Evaluation">Click here go to folder</a>
 
     VotingRegressor(estimators=[('gbm',
                                  GradientBoostingRegressor(learning_rate=0.00523960135300263,
@@ -475,3 +475,6 @@ Using RadomForestRegestion to pre-train and get features importance.
       linear:   RMSLE :0.4973750668347952, R2: 0.00395234419702728
       mlp:      RMSLE: 0.49674135308441153, R2: 0.010736835934658795
       ridge:    RMSLE: 0.5008227464703024, R2: 0.03714390073347551
+
+## Evaluation model:
+<img src="https://github.com/quangson05dt1/vef_FinalProject_Heritage-Health-Prize/blob/main/imgsrc/evaluation_models.png">
