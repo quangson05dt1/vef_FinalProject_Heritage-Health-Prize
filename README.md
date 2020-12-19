@@ -238,6 +238,48 @@ Datatype:
 <table class="dataframe" border="1">
   <thead>
     <tr>
+      <th></th>
+      <th>MemberID</th>
+      <th>ProviderID</th>
+      <th>Vendor</th>
+      <th>PCP</th>
+      <th>Year</th>
+      <th>Specialty</th>
+      <th>PlaceSvc</th>
+      <th>PayDelay</th>
+      <th>LengthOfStay</th>
+      <th>DSFS</th>
+      <th>PrimaryConditionGroup</th>
+      <th>CharlsonIndex</th>
+      <th>ProcedureGroup</th>
+      <th>SupLOS</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Type</th>
+      <td>int64</td>
+      <td>float64</td>
+      <td>float64</td>
+      <td>float64</td>
+      <td>object</td>
+      <td>object</td>
+      <td>object</td>
+      <td>object</td>
+      <td>object</td>
+      <td>object</td>
+      <td>object</td>
+      <td>object</td>
+      <td>object</td>
+      <td>int64</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<table class="dataframe" border="1">
+  <thead>
+    <tr>
       <th>Colum</th>
       <th>Type</th>
     </tr>
