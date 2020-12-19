@@ -11,7 +11,7 @@ Feature Engineering is based on an idea <a href="https://foreverdata.org/1015/co
     Project
     ├── 0.Data
     │ 
-    ├── 1.Exploration <p><a href="https://github.com/quangson05dt1/vef_FinalProject_Heritage-Health-Prize/tree/main/1.Exploration"></p>
+    ├── 1.Exploration
     │   ├── Explore_Raw Data.ipynb
     │   └── Explore_Feature after process.ipynb <──┐
     │                                              │ 
@@ -31,3 +31,6 @@ Feature Engineering is based on an idea <a href="https://foreverdata.org/1015/co
     └── 4.Evaluation
         ├── voting-model.ipynb ───> result.csv
         └── voting-model-newdata feature.ipynb ───> result_2.csv
+
+
+#1. Exploration
