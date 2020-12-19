@@ -38,7 +38,7 @@ This is step exploring raw data and feature data after processing in step 2.
 ## Expore raw data
 This step tells us the data structure, the data form, some data visualization so we know what to do with this data before we put it into model training.
 
-###Input data: Claims.csv 
+### Input data: Claims.csv 
 shape(2668990, 14)
 
 <table class="dataframe" border="1">
@@ -155,38 +155,162 @@ shape(2668990, 14)
 </div>
 
 Missing data:
-                         Total   Percent
-LengthOfStay           2597392  0.973174
-DSFS                     52770  0.019772
-Vendor                   24856  0.009313
-ProviderID               16264  0.006094
-PrimaryConditionGroup    11410  0.004275
-Specialty                 8405  0.003149
-PlaceSvc                  7632  0.002860
-PCP                       7492  0.002807
-ProcedureGroup            3675  0.001377
-SupLOS                       0  0.000000
-CharlsonIndex                0  0.000000
-PayDelay                     0  0.000000
-Year                         0  0.000000
-MemberID                     0  0.000000
+<table class="dataframe" border="1">
+  <thead>
+    <tr>
+      <th></th>
+      <th>Total</th>
+      <th>Percent</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>LengthOfStay</th>
+      <td>2597392</td>
+      <td>0.973174</td>
+    </tr>
+    <tr>
+      <th>DSFS</th>
+      <td>52770</td>
+      <td>0.019772</td>
+    </tr>
+    <tr>
+      <th>Vendor</th>
+      <td>24856</td>
+      <td>0.009313</td>
+    </tr>
+    <tr>
+      <th>ProviderID</th>
+      <td>16264</td>
+      <td>0.006094</td>
+    </tr>
+    <tr>
+      <th>PrimaryConditionGroup</th>
+      <td>11410</td>
+      <td>0.004275</td>
+    </tr>
+    <tr>
+      <th>Specialty</th>
+      <td>8405</td>
+      <td>0.003149</td>
+    </tr>
+    <tr>
+      <th>PlaceSvc</th>
+      <td>7632</td>
+      <td>0.002860</td>
+    </tr>
+    <tr>
+      <th>PCP</th>
+      <td>7492</td>
+      <td>0.002807</td>
+    </tr>
+    <tr>
+      <th>ProcedureGroup</th>
+      <td>3675</td>
+      <td>0.001377</td>
+    </tr>
+    <tr>
+      <th>SupLOS</th>
+      <td>0</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>CharlsonIndex</th>
+      <td>0</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>PayDelay</th>
+      <td>0</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>Year</th>
+      <td>0</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>MemberID</th>
+      <td>0</td>
+      <td>0.000000</td>
+    </tr>
+  </tbody>
+</table>
+
 
 Datatype:
-MemberID                   int64
-ProviderID               float64
-Vendor                   float64
-PCP                      float64
-Year                      object
-Specialty                 object
-PlaceSvc                  object
-PayDelay                  object
-LengthOfStay              object
-DSFS                      object
-PrimaryConditionGroup     object
-CharlsonIndex             object
-ProcedureGroup            object
-SupLOS                     int64
-dtype: object
+
+<table class="dataframe" border="1">
+  <thead>
+    <tr>
+      <th>Colum</th>
+      <th>Type</th>>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>MemberID</th>
+      <td>int64</td>
+    </tr>
+    <tr>
+      <th>ProviderID</th>
+      <td>float64</td>
+    </tr>
+    <tr>
+      <th>Vendor</th>
+      <td>float64</td>
+    </tr>
+    <tr>
+      <th>PCP</th>
+      <td>float64</td>
+    </tr>
+    <tr>
+      <th>Year</th>
+      <td>object</td>
+    </tr>
+    <tr>
+      <th>Specialty</th>
+      <td>object</td>
+    </tr>
+    <tr>
+      <th>PrimaryConditionGroup</th>
+      <td>object</td>
+    </tr>
+    <tr>
+      <th>Specialty</th>
+      <td>object</td>
+    </tr>
+    <tr>
+      <th>PlaceSvc</th>
+      <td>object</td>
+    </tr>
+    <tr>
+      <th>ProcedureGroup</th>
+      <td>object</td>
+    </tr>
+    <tr>
+      <th>CharlsonIndex</th>
+      <td>object</td>
+    </tr>
+    <tr>
+      <th>PayDelay</th>
+      <td>object</td>
+    </tr>
+    <tr>
+      <th>LengthOfStay</th>
+      <td>object</td>
+    </tr>
+    <tr>
+      <th>DSFS</th>
+      <td>object</td>
+    </tr>
+    <tr>
+      <th>SupLOS</th>
+      <td>int64</td>
+    </tr>  
+  </tbody>
+</table>
+
 
 # 2.Feature Engineering
 
