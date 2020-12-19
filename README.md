@@ -321,6 +321,74 @@ Missing data:
 # 2.Feature Engineering 
 <a href="https://github.com/quangson05dt1/vef_FinalProject_Heritage-Health-Prize/tree/main/2.Feature%20Engineering">Click here go to folder</a>
 
+## Members processing
+AgeApprox: based on the following lookup table derived from AgeAtFirstClaim
+<table class="dataframe" border="1">
+  <thead>
+    <tr>
+      <th>AgeAtFirstClaim</th>
+      <th>AgeApprox</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th><null></th>
+      <td>45</td>
+    </tr>
+    <tr>
+      <th>0-9</th>
+      <td>5</td>
+    </tr>
+    <tr>
+      <th>10-19/th>
+      <td>15</td>
+    </tr>
+    <tr>
+      <th>20-29</th>
+      <td>25</td>
+    </tr>
+    <tr>
+      <th>30-39</th>
+      <td>35</td>
+    </tr>
+    <tr>
+      <th>40-49</th>
+      <td>45</td>
+    </tr>
+    <tr>
+      <th>50-59</th>
+      <td>55</td>
+    </tr>
+    <tr>
+      <th>60-69</th>
+      <td>68</td>
+    </tr>
+    <tr>
+      <th>70-79</th>
+      <td>75</td>
+    </tr>
+    <tr>
+      <th>80+</th>
+      <td>85</td>
+    </tr>
+    <tr>
+      <th></th>
+      <td></td>
+    </tr>
+    <tr>
+      <th>Male</th>
+      <td>=IF(SEX = "M",1,0)</td>
+    </tr>
+    <tr>
+      <th>Female</th>
+      <td>=IF(SEX = "F",1,0)</td>
+    </tr>
+    <tr>
+      <th>MissSex</th>
+      <td>=IF(SEX = "",1,0)</td>
+    </tr>
+  </tbody>
+</table>
 
 # 3.Modelling 
 <a href="https://github.com/quangson05dt1/vef_FinalProject_Heritage-Health-Prize/tree/main/3.Modelling">Click here go to folder</a>
