@@ -239,12 +239,11 @@ Missing data:
 
 
 Datatype:
-
 <table class="dataframe" border="1">
   <thead>
     <tr>
       <th>Colum</th>
-      <th>Type</th>>
+      <th>Type</th>
     </tr>
   </thead>
   <tbody>
