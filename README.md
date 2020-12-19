@@ -128,8 +128,27 @@ shape(2668990, 14)
 #### Sex:
 <img src="https://github.com/quangson05dt1/vef_FinalProject_Heritage-Health-Prize/blob/main/imgsrc/Sex_member.png">
 
+### Input data: LabCount.csv
+#### LabCount:
+<img src="https://github.com/quangson05dt1/vef_FinalProject_Heritage-Health-Prize/blob/main/imgsrc/LabCount.png">
 
+### Input data: DrugCount.csv
+#### LabCount:
+<img src="https://github.com/quangson05dt1/vef_FinalProject_Heritage-Health-Prize/blob/main/imgsrc/DrugCount.png">
 
+### Outcome: DaysInHospital_Y2.csv
+#### DaysInHospital:
+<img src="https://github.com/quangson05dt1/vef_FinalProject_Heritage-Health-Prize/blob/main/imgsrc/DIH.png">
+
+#### ClaimsTruncated:
+<img src="https://github.com/quangson05dt1/vef_FinalProject_Heritage-Health-Prize/blob/main/imgsrc/ClaimTruncated.png">
+
+### Outcome: DaysInHospital_Y3.csv
+#### DaysInHospital:
+<img src="https://github.com/quangson05dt1/vef_FinalProject_Heritage-Health-Prize/blob/main/imgsrc/DIH_Y3.png">
+
+#### ClaimsTruncated:
+<img src="https://github.com/quangson05dt1/vef_FinalProject_Heritage-Health-Prize/blob/main/imgsrc/ClaimTruncated_Y3.png">
 
 # 2.Feature Engineering 
 <a href="https://github.com/quangson05dt1/vef_FinalProject_Heritage-Health-Prize/tree/main/2.Feature%20Engineering">Click here go to folder</a>
