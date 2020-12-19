@@ -348,9 +348,14 @@ Shape(218415, 145)
 <a href="https://github.com/quangson05dt1/vef_FinalProject_Heritage-Health-Prize/tree/main/2.Feature%20Engineering">Click here go to folder</a>
 
 ## Clean data: 
-Fill zero with numberic, fill 'UNKNOWN' with category data. 
+Fill zero with numberic
+
+Fill 'UNKNOWN' with category data. 
 ## Transform data:
-Category to numberic data by: unique, sum total, min, max, average, std.
+- Category to numberic data by: unique, sum total, min, max, average, std.
+- Count the number of iterations of elements in catalogy variables: Specialty, PlaceSvc, PrimaryConditionGroup, ProcedureGroup, PrimaryConditionGroup
+- Count the number of iterations of new catalogy variables: PrimaryConditionGroup&Specialty, ProcedureGroup&Specialty, ProcedureGroup&PrimaryConditionGroup, PrimaryConditionGroup&PlaceSvc
+
 ## Merge all data member to one file "modelling_set".
 
 
@@ -388,6 +393,7 @@ Using RadomForestRegestion to pre-train and get features importance.
 ### Choice number features to create interaction variant
 RMSL vs number feature:
 <img src="https://github.com/quangson05dt1/vef_FinalProject_Heritage-Health-Prize/blob/main/imgsrc/rmsle_noFeature.png">
+
 R2 vs number feature:
 <img src="https://github.com/quangson05dt1/vef_FinalProject_Heritage-Health-Prize/blob/main/imgsrc/r2_noFeature.png">
 
