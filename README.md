@@ -258,7 +258,7 @@ Missing data:
 
 
 # 3.Modelling 
-<a href="https://drive.google.com/drive/folders/1pwQ3H4aJ8a6yyJHZkTwtjcL4wYWQb7bn">Click here go to folder</a>
+<a href="https://github.com/quangson05dt1/vef_FinalProject_Heritage-Health-Prize/tree/main/3.Modelling">Click here go to folder</a>
 
 
 # 4.Evaluation 
