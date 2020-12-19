@@ -390,15 +390,13 @@ Using RadomForestRegestion to pre-train and get features importance.
 <img src="https://github.com/quangson05dt1/vef_FinalProject_Heritage-Health-Prize/blob/main/imgsrc/Feature_Importances_all.png">
 
 ### Choice number features to create interaction variant
-RMSL vs number feature:
+- RMSLE vs number feature:
 <img src="https://github.com/quangson05dt1/vef_FinalProject_Heritage-Health-Prize/blob/main/imgsrc/rmsle_noFeature.png">
 
-R2 vs number feature:
+- R2 vs number feature:
 <img src="https://github.com/quangson05dt1/vef_FinalProject_Heritage-Health-Prize/blob/main/imgsrc/r2_noFeature.png">
+- 12 Base on the correlation between the number of features and scrores of RMSLE/R2. We have selected 12 most important features to create interaction variables by multiplying them together, creating 90 other variables.
 
- 
- 12 features importance:
- 
      'no_Claims',
      'MissSex',
      'ClaimsTruncated',
@@ -411,15 +409,10 @@ R2 vs number feature:
      'DrugCount_ave',
      'DrugCount_total',
      'PrimaryConditionGroup_Count_RENAL2'
- 
- 
- 
-
-    
- 
+## Neuron Network
 
 
-
+## 6_Gradient Boosting
 
 # 4.Evaluation 
 <a href="https://drive.google.com/drive/folders/1pwQ3H4aJ8a6yyJHZkTwtjcL4wYWQb7bn">Click here go to folder</a>
