@@ -478,5 +478,6 @@ Using RadomForestRegestion to pre-train and get features importance.
 
 ## Evaluation model:
 Because GBM and Randomforest Regestion RMSLE near same => Plot histogram of DIH same density
+
 Because MLP and Linear Regestion RMSLE near same => Plot histogram of DIH same density
 <img src="https://github.com/quangson05dt1/vef_FinalProject_Heritage-Health-Prize/blob/main/imgsrc/evaluation_models.png">
