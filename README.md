@@ -150,6 +150,48 @@ shape(2668990, 14)
   </tbody>
 </table>
 
+Datatype:
+<table class="dataframe" border="1">
+  <thead>
+    <tr>
+      <th></th>
+      <th>MemberID</th>
+      <th>ProviderID</th>
+      <th>Vendor</th>
+      <th>PCP</th>
+      <th>Year</th>
+      <th>Specialty</th>
+      <th>PlaceSvc</th>
+      <th>PayDelay</th>
+      <th>LengthOfStay</th>
+      <th>DSFS</th>
+      <th>PrimaryConditionGroup</th>
+      <th>CharlsonIndex</th>
+      <th>ProcedureGroup</th>
+      <th>SupLOS</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Type</th>
+      <td>int64</td>
+      <td>float64</td>
+      <td>float64</td>
+      <td>float64</td>
+      <td>object</td>
+      <td>object</td>
+      <td>object</td>
+      <td>object</td>
+      <td>object</td>
+      <td>object</td>
+      <td>object</td>
+      <td>object</td>
+      <td>object</td>
+      <td>int64</td>
+    </tr>
+  </tbody>
+</table>
+
 Missing data:
 <table class="dataframe" border="1">
   <thead>
@@ -230,117 +272,6 @@ Missing data:
       <td>0</td>
       <td>0.000000</td>
     </tr>
-  </tbody>
-</table>
-
-
-Datatype:
-<table class="dataframe" border="1">
-  <thead>
-    <tr>
-      <th></th>
-      <th>MemberID</th>
-      <th>ProviderID</th>
-      <th>Vendor</th>
-      <th>PCP</th>
-      <th>Year</th>
-      <th>Specialty</th>
-      <th>PlaceSvc</th>
-      <th>PayDelay</th>
-      <th>LengthOfStay</th>
-      <th>DSFS</th>
-      <th>PrimaryConditionGroup</th>
-      <th>CharlsonIndex</th>
-      <th>ProcedureGroup</th>
-      <th>SupLOS</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>Type</th>
-      <td>int64</td>
-      <td>float64</td>
-      <td>float64</td>
-      <td>float64</td>
-      <td>object</td>
-      <td>object</td>
-      <td>object</td>
-      <td>object</td>
-      <td>object</td>
-      <td>object</td>
-      <td>object</td>
-      <td>object</td>
-      <td>object</td>
-      <td>int64</td>
-    </tr>
-  </tbody>
-</table>
-
-
-<table class="dataframe" border="1">
-  <thead>
-    <tr>
-      <th>Colum</th>
-      <th>Type</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>MemberID</th>
-      <td>int64</td>
-    </tr>
-    <tr>
-      <th>ProviderID</th>
-      <td>float64</td>
-    </tr>
-    <tr>
-      <th>Vendor</th>
-      <td>float64</td>
-    </tr>
-    <tr>
-      <th>PCP</th>
-      <td>float64</td>
-    </tr>
-    <tr>
-      <th>Year</th>
-      <td>object</td>
-    </tr>
-    <tr>
-      <th>Specialty</th>
-      <td>object</td>
-    </tr>
-    <tr>
-      <th>PrimaryConditionGroup</th>
-      <td>object</td>
-    </tr>
-    <tr>
-      <th>PlaceSvc</th>
-      <td>object</td>
-    </tr>
-    <tr>
-      <th>ProcedureGroup</th>
-      <td>object</td>
-    </tr>
-    <tr>
-      <th>CharlsonIndex</th>
-      <td>object</td>
-    </tr>
-    <tr>
-      <th>PayDelay</th>
-      <td>object</td>
-    </tr>
-    <tr>
-      <th>LengthOfStay</th>
-      <td>object</td>
-    </tr>
-    <tr>
-      <th>DSFS</th>
-      <td>object</td>
-    </tr>
-    <tr>
-      <th>SupLOS</th>
-      <td>int64</td>
-    </tr>  
   </tbody>
 </table>
 
