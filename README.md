@@ -347,13 +347,34 @@ Shape(218415, 145)
 # 2.Feature Engineering 
 <a href="https://github.com/quangson05dt1/vef_FinalProject_Heritage-Health-Prize/tree/main/2.Feature%20Engineering">Click here go to folder</a>
 
-## Clean data 
-## Transform category to numberic data by: unique, sum total, min, max, average, std
-## Merge all data member to one file "modelling_set"
+## Clean data: 
+Fill zero with numberic, fill 'UNKNOWN' with category data. 
+## Transform data:
+Category to numberic data by: unique, sum total, min, max, average, std.
+## Merge all data member to one file "modelling_set".
+
 
 # 3.Modelling 
 <a href="https://github.com/quangson05dt1/vef_FinalProject_Heritage-Health-Prize/tree/main/3.Modelling">Click here go to folder</a>
 
+## Linear Regression:
+Score: RMSLE :0.4973750668347952, R2: 0.00395234419702728
+## Logistic Regression:
+Score  
+                    precision    recall  f1-score   support
+
+         0.0       0.85      0.99      0.92     37481
+         1.0       0.51      0.04      0.08      6761
+
+    accuracy                           0.85     44242
+    AUC = 0.6986855137500797
+    
+ 
+ 
+
+
+## Create interaction variant:
+Using RadomForestRegestion to pre-train and get features importance.
 
 # 4.Evaluation 
 <a href="https://drive.google.com/drive/folders/1pwQ3H4aJ8a6yyJHZkTwtjcL4wYWQb7bn">Click here go to folder</a>
