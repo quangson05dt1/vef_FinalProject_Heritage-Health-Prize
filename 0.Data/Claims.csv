@@ -1,0 +1,3 @@
+MemberID,ProviderID,Vendor,PCP,Year,Specialty,PlaceSvc,PayDelay,LengthOfStay,DSFS,PrimaryConditionGroup,CharlsonIndex,ProcedureGroup,SupLOS
+42286978,8013252,172193,37796,Y1,Surgery,Office,28,,8- 9 months,NEUMENT,0,MED,0
+97903248,3316066,726296,5300,Y3,Internal,Office,50,,7- 8 months,NEUMENT,1-2,EM,0
