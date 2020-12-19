@@ -277,10 +277,6 @@ Datatype:
       <td>object</td>
     </tr>
     <tr>
-      <th>Specialty</th>
-      <td>object</td>
-    </tr>
-    <tr>
       <th>PlaceSvc</th>
       <td>object</td>
     </tr>
