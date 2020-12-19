@@ -36,6 +36,7 @@ Feature Engineering is based on an idea <a href="https://foreverdata.org/1015/co
 
 # 1.Exploration: 
 <a href="https://github.com/quangson05dt1/vef_FinalProject_Heritage-Health-Prize/tree/main/1.Exploration">Click here go to folder</a>
+
 This is step exploring raw data and feature data after processing in step 2.
 ## Expore raw data
 This step tells us the data structure, the data form, some data visualization so we know what to do with this data before we put it into model training.
