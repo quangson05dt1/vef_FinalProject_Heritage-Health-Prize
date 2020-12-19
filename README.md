@@ -41,6 +41,34 @@ This is step exploring raw data and feature data after processing in step 2.
 ## Expore raw data
 This step tells us the data structure, the data form, some data visualization so we know what to do with this data before we put it into model training.
 
+Giải thích thuật ngữ:
+
+    Bảng Members Table
+        MemberID: id của bệnh nhân (mỗi bệnh nhân chỉ có 1 id duy nhất cho tất cả các lần claim bảo hiểm)
+        AgeAtFirstClaim: tuổi của bệnh nhân ghi nhận ở lần claim đầu tiên
+        Sex: giới tính 
+    Bảng Claims Table
+        MemberID: id của bệnh nhân
+        ProviderID: id của Bác sĩ / Nhân viên y tế chăm sóc cho bệnh nhân đó
+        Vendor: đơn vị xuất hoá đơn viện phí (chẳng hạn bệnh viên, phòng khám,....)
+        PCP: id của bác sĩ chăm sóc ban đầu của bệnh nhân
+        Year: năm claim bảo hiểm (Y1, Y2, hay Y3)
+        Specialty: chuyên khoa điều trị 
+        PlaceSvc: nơi điều trị 
+        PayDelay: thời gian từ lúc claim đến lúc được trả tiền
+        LengthOfStay: thời gian nằm viện.
+        DSFS (days since first service that year): số ngày kể từ lần sử dụng dịch vụ đầu tiên trong năm đó
+        PrimaryConditionGroup (a generalization of the primary diagnosis codes): mã số nhóm bệnh được chuẩn đoán
+        CharlsonIndex (a generalization of the diagnosis codes in the form of a categorized comorbidity score): một loại chỉ số đánh giá nguy cơ tử vong trong 10 năm
+        ProcedureGroup (a generalization of the CPT code or treatment code): mã số nhóm điều trị
+        SupLOS (suppressed Length of stay): đánh dấu LengthOfStay có null hay không
+    Labs Table: chứa kết quả các chỉ số xét nghiệm.
+    RX Table: chứa thông tin các loại thuốc được kê đơn.
+    DaysInHospital Tables: chứa thông tin về số ngày nằm viện của bệnh nhan.
+        MemberID: id của bệnh nhân
+        ClaimsTruncated: đánh dấu nếu claim của bệnh nhân bị truncated (giả sử hoá đơn của bệnh nhân là $1000, nhưng bảo hiểm chỉ chi trả $800 thì claim đó là truncated). Nếu biến này là 1 cho một bệnh nhân nào đó trong DaysInHospital_Y2 thì có nghĩa là bệnh nhân đó đã từng có truncated trong Y1.
+        DaysInHospital: số ngày nằm viện trong từng năm.
+
 ### Input data: Claims.csv 
 shape(2668990, 14)
 
