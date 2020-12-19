@@ -42,6 +42,7 @@ This is step exploring raw data and feature data after processing in step 2.
 This step tells us the data structure, the data form, some data visualization so we know what to do with this data before we put it into model training.
 
 Data dictionaty:
+
     Members Data Table
         MemberID: Member pseudonym.
         AgeAtFirstClaim: Age in years at the time of the first claim’s date of service computed froM the date of birth; Generalized into ten year age intervals.
@@ -62,15 +63,15 @@ Data dictionaty:
         ProcedureGroup: Broad categories of procedures, grouped according to the hierarchical structure defined by the Current Procedural Terminology (CPT) [3].
         SupLOS: Indicates if the NULL value for the LengthOfStay variable is due to suppression done during the de-identification process. A value of 1 indicates
         that suppression was applied.
-  Drug Count Data
+    Drug Count Data
         Year: Year in which the drug prescription was filled: Y1; Y2; Y3.
         DSFS: Days since first service (or claim), computed from the first claim for that member for each year
         DrugCount: Count of unique prescription drugs filled by DSFS. 
-  Lab Count Data
+    Lab Count Data
         Year: Year in which the drug prescription was filled: Y1; Y2; Y3.
         DSFS: Days since first service (or claim), computed from the first claim for that member for each year
-        
-Outcome Data
+
+    Outcome Data
         MemberID Member pseudonym.
         DaysInHospital_Y2: Days in hospital, the main outcome, for members with claims in Y1. Values above 14 days (the 99% percentile) are top-coded as “15+”.
         DaysInHospital_Y3 Days in hospital, the main outcome, for members with claims in Y2. Values above 14 days (the 99% percentile) are top-coded as “15+”.
