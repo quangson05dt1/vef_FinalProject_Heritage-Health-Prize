@@ -153,6 +153,8 @@ shape(2668990, 14)
 ## Explore Feature after process
 This step tells us the data structure, the data form, visualizate data after finished step 2.
 
+Shape(218415, 145)
+
 <table class="dataframe" border="1">
   <thead>
     <tr>
@@ -304,6 +306,41 @@ This step tells us the data structure, the data form, visualizate data after fin
   </tbody>
 </table>
 
+#### Target Size:
+<img src="https://github.com/quangson05dt1/vef_FinalProject_Heritage-Health-Prize/blob/main/imgsrc/Target_size.png">
+
+#### Visualization of numerical data vs target:
+<img src="https://github.com/quangson05dt1/vef_FinalProject_Heritage-Health-Prize/blob/main/imgsrc/box_plot_group_Target.png">
+
+#### Feature Importances:
+<img src="https://github.com/quangson05dt1/vef_FinalProject_Heritage-Health-Prize/blob/main/imgsrc/Feature_Importances.png">
+
+#### Visualization 12 features Importances vs target:
+1. feature 140 ClaimsTruncated (0.186243)
+2. feature 12 no_Claims (0.180747)
+3. feature 138 MissSex (0.148270)
+4. feature 135 AgeAtFirstClaim (0.073533)
+5. feature 96 PrimaryConditionGroup_Count_PRGNCY (0.049612)
+6. feature 56 Specialty_Count_Emergency (0.034085)
+7. feature 33 DSFS_sum (0.032175)
+8. feature 38 CharlsonIndex_sum (0.031078)
+9. feature 65 PlaceSvc_Count_Inpatient Hospital (0.021496)
+10. feature 104 PrimaryConditionGroup_Count_RENAL2 (0.019401)
+11. feature 9 DrugCount_ave (0.014939)
+12. feature 124 ProcedureGroup_Count_SIS (0.011402)
+
+<img src="https://github.com/quangson05dt1/vef_FinalProject_Heritage-Health-Prize/blob/main/imgsrc/ClaimTruncated_Target.png">
+<img src="https://github.com/quangson05dt1/vef_FinalProject_Heritage-Health-Prize/blob/main/imgsrc/noClaim_target.png">
+<img src="https://github.com/quangson05dt1/vef_FinalProject_Heritage-Health-Prize/blob/main/imgsrc/MissSex_Target.png">
+<img src="https://github.com/quangson05dt1/vef_FinalProject_Heritage-Health-Prize/blob/main/imgsrc/Age_Target.png">
+<img src="https://github.com/quangson05dt1/vef_FinalProject_Heritage-Health-Prize/blob/main/imgsrc/PrimaryConditionGroup_Count_PRGNCY_target.png">
+<img src="https://github.com/quangson05dt1/vef_FinalProject_Heritage-Health-Prize/blob/main/imgsrc/Specialty_Count_Emergency_target.png">
+<img src="https://github.com/quangson05dt1/vef_FinalProject_Heritage-Health-Prize/blob/main/imgsrc/DSFS_sum_target.png">
+<img src="https://github.com/quangson05dt1/vef_FinalProject_Heritage-Health-Prize/blob/main/imgsrc/CharlsonIndex_sum_target.png">
+<img src="https://github.com/quangson05dt1/vef_FinalProject_Heritage-Health-Prize/blob/main/imgsrc/PlaceSvc_Count_Inpatient Hospital_target.png">
+<img src="https://github.com/quangson05dt1/vef_FinalProject_Heritage-Health-Prize/blob/main/imgsrc/PrimaryConditionGroup_Count_RENAL2_target.png">
+<img src="https://github.com/quangson05dt1/vef_FinalProject_Heritage-Health-Prize/blob/main/imgsrc/DrugCount_ave_target.png">
+<img src="https://github.com/quangson05dt1/vef_FinalProject_Heritage-Health-Prize/blob/main/imgsrc/ProcedureGroup_Count_SIS_target.png">
 
 
 
@@ -378,6 +415,8 @@ AgeApprox: based on the following lookup table derived from AgeAtFirstClaim
     </tr>
   </tbody>
 </table>
+
+
 
 # 3.Modelling 
 <a href="https://github.com/quangson05dt1/vef_FinalProject_Heritage-Health-Prize/tree/main/3.Modelling">Click here go to folder</a>
