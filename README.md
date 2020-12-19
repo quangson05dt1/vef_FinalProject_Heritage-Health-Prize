@@ -340,7 +340,7 @@ AgeApprox: based on the following lookup table derived from AgeAtFirstClaim
       <td>5</td>
     </tr>
     <tr>
-      <th>10-19/th>
+      <th>10-19</th>
       <td>15</td>
     </tr>
     <tr>
