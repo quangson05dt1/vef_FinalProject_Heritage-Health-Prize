@@ -395,7 +395,7 @@ Using RadomForestRegestion to pre-train and get features importance.
 
 - R2 vs number feature:
 <img src="https://github.com/quangson05dt1/vef_FinalProject_Heritage-Health-Prize/blob/main/imgsrc/r2_noFeature.png">
-- 12 Base on the correlation between the number of features and scrores of RMSLE/R2. We have selected 12 most important features to create interaction variables by multiplying them together, creating 90 other variables.
+- Base on the correlation between the number of features and scrores of RMSLE/R2. We have selected 12 most important features to create interaction variables by multiplying them together, creating 90 other variables.
 
      'no_Claims',
      'MissSex',
