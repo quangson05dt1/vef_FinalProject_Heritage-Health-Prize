@@ -358,26 +358,63 @@ Category to numberic data by: unique, sum total, min, max, average, std.
 <a href="https://github.com/quangson05dt1/vef_FinalProject_Heritage-Health-Prize/tree/main/3.Modelling">Click here go to folder</a>
 
 ## Linear Regression:
-Score: RMSLE :0.4973750668347952, R2: 0.00395234419702728
+Score: 
+
+        RMSLE :0.4973750668347952, R2: 0.00395234419702728
+
 ## Logistic Regression:
 hyper parameters:
 
-        ({'C': 0.1, 'penalty': 'l2', 'solver': 'saga'},LogisticRegression(C=0.1, n_jobs=-1, solver='saga', verbose=1))
+    ({'C': 0.1, 'penalty': 'l2', 'solver': 'saga'},LogisticRegression(C=0.1, n_jobs=-1, solver='saga', verbose=1))
 Score  
 
-                    precision    recall  f1-score   support
+                  precision  recall  f1-score   support
          0.0       0.85      0.99      0.92     37481
          1.0       0.51      0.04      0.08      6761
 
     accuracy                           0.85     44242
     AUC = 0.6986855137500797
     
- ## Random Forest Regression
+## Random Forest Regression
+  Score:
+ 
+    RMSLE: 0.4931522108580743, R2: 0.010057526876011247
+ 
+## Processing Choice features - Create interaction variant
+Using RadomForestRegestion to pre-train and get features importance.
+### Features importance:
+<img src="https://github.com/quangson05dt1/vef_FinalProject_Heritage-Health-Prize/blob/main/imgsrc/Feature_Importances_all.png">
+
+### Choice number features to create interaction variant
+RMSL vs number feature:
+<img src="https://github.com/quangson05dt1/vef_FinalProject_Heritage-Health-Prize/blob/main/imgsrc/rmsle_noFeature.png">
+R2 vs number feature:
+<img src="https://github.com/quangson05dt1/vef_FinalProject_Heritage-Health-Prize/blob/main/imgsrc/r2_noFeature.png">
+
+ 
+ 12 features importance:
+ 
+     'no_Claims',
+     'MissSex',
+     'ClaimsTruncated',
+     'AgeAtFirstClaim',
+     'CharlsonIndex_sum',
+     'DSFS_sum',
+     'PrimaryConditionGroup_Count_PRGNCY',
+     'Specialty_Count_Emergency',
+     'PlaceSvc_Count_Inpatient Hospital',
+     'DrugCount_ave',
+     'DrugCount_total',
+     'PrimaryConditionGroup_Count_RENAL2'
+ 
+ 
+ 
+
+    
  
 
 
-## Create interaction variant:
-Using RadomForestRegestion to pre-train and get features importance.
+
 
 # 4.Evaluation 
 <a href="https://drive.google.com/drive/folders/1pwQ3H4aJ8a6yyJHZkTwtjcL4wYWQb7bn">Click here go to folder</a>
