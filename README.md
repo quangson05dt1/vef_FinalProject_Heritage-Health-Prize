@@ -108,8 +108,11 @@ Giải thích thuật ngữ:
 
 ### Input data: Claims.csv 
 shape(2668990, 14)
+Days since first claim:
+<img src="https://github.com/quangson05dt1/vef_FinalProject_Heritage-Health-Prize/blob/main/imgsrc/DSFS.png">
 
-
+PrimaryConditionGroup:
+<img src="https://github.com/quangson05dt1/vef_FinalProject_Heritage-Health-Prize/blob/main/imgsrc/PrimaryConditionGroup.png">
 
 # 2.Feature Engineering 
 <a href="https://github.com/quangson05dt1/vef_FinalProject_Heritage-Health-Prize/tree/main/2.Feature%20Engineering">Click here go to folder</a>
