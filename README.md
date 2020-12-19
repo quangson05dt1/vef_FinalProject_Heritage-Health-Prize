@@ -360,16 +360,19 @@ Category to numberic data by: unique, sum total, min, max, average, std.
 ## Linear Regression:
 Score: RMSLE :0.4973750668347952, R2: 0.00395234419702728
 ## Logistic Regression:
-Score  
-                    precision    recall  f1-score   support
+hyper parameters:
 
+        ({'C': 0.1, 'penalty': 'l2', 'solver': 'saga'},LogisticRegression(C=0.1, n_jobs=-1, solver='saga', verbose=1))
+Score  
+
+                    precision    recall  f1-score   support
          0.0       0.85      0.99      0.92     37481
          1.0       0.51      0.04      0.08      6761
 
     accuracy                           0.85     44242
     AUC = 0.6986855137500797
     
- 
+ ## Random Forest Regression
  
 
 
