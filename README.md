@@ -34,7 +34,7 @@ Feature Engineering is based on an idea <a href="https://foreverdata.org/1015/co
         └── voting-model-newdata feature.ipynb ───> result_2.csv
 
 
-# 1.Exploration: <a href="https://github.com/quangson05dt1/vef_FinalProject_Heritage-Health-Prize/tree/main/1.Exploration"></a>
+# 1.Exploration: <a href="https://github.com/quangson05dt1/vef_FinalProject_Heritage-Health-Prize/tree/main/1.Exploration">Click here go to folder</a>
 This is step exploring raw data and feature data after processing in step 2.
 ## Expore raw data
 This step tells us the data structure, the data form, some data visualization so we know what to do with this data before we put it into model training.
@@ -251,10 +251,10 @@ Missing data:
   </tbody>
 </table>
 
-# 2.Feature Engineering <a href="https://github.com/quangson05dt1/vef_FinalProject_Heritage-Health-Prize/tree/main/2.Feature%20Engineering"></a>
+# 2.Feature Engineering <a href="https://github.com/quangson05dt1/vef_FinalProject_Heritage-Health-Prize/tree/main/2.Feature%20Engineering">Click here go to folder</a>
 
 
-# 3.Modelling <a href="https://drive.google.com/drive/folders/1pwQ3H4aJ8a6yyJHZkTwtjcL4wYWQb7bn"></a>
+# 3.Modelling <a href="https://drive.google.com/drive/folders/1pwQ3H4aJ8a6yyJHZkTwtjcL4wYWQb7bn">Click here go to folder</a>
 
 
-# 4.Evaluation <a href="https://drive.google.com/drive/folders/1pwQ3H4aJ8a6yyJHZkTwtjcL4wYWQb7bn"></a>
+# 4.Evaluation <a href="https://drive.google.com/drive/folders/1pwQ3H4aJ8a6yyJHZkTwtjcL4wYWQb7bn">Click here go to folder</a>
