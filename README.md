@@ -149,10 +149,6 @@ shape(2668990, 14)
     </tr>
   </tbody>
 </table>
-</div>
-</div>
-
-</div>
 
 Missing data:
 <table class="dataframe" border="1">
