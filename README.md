@@ -39,7 +39,7 @@ Feature Engineering is based on an idea <a href="https://foreverdata.org/1015/co
 
 This is step exploring raw data and feature data after processing in step 2.
 ## Expore raw data
-This step tells us the data structure, the data form, some data visualization so we know what to do with this data before we put it into model training.
+This step tells us the data structure, the data form, visualizate data so we know what to do with this data before we put it into model training.
 
 Data dictionaty:
 
@@ -149,6 +149,10 @@ shape(2668990, 14)
 
 #### ClaimsTruncated:
 <img src="https://github.com/quangson05dt1/vef_FinalProject_Heritage-Health-Prize/blob/main/imgsrc/ClaimTruncated_Y3.png">
+
+## Explore Feature after process
+This step tells us the data structure, the data form, visualizate data after finished step 2.
+
 
 # 2.Feature Engineering 
 <a href="https://github.com/quangson05dt1/vef_FinalProject_Heritage-Health-Prize/tree/main/2.Feature%20Engineering">Click here go to folder</a>
