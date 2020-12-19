@@ -34,7 +34,8 @@ Feature Engineering is based on an idea <a href="https://foreverdata.org/1015/co
 
 
 # 1.Exploration:
-
+This is step exploring raw data and feature data after processing in step 2.
+## Expore raw data to see construct 
 
 # 2.Feature Engineering
 
