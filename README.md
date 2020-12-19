@@ -38,8 +38,8 @@ This is step exploring raw data and feature data after processing in step 2.
 ## Expore raw data
 This step tells us the data structure, the data form, some data visualization so we know what to do with this data before we put it into model training.
 
-Main input data: Claims.csv
-Main target data: DaysInHospital
+###Input data: Claims.csv 
+shape(2668990, 14)
 
 <table class="dataframe" border="1">
   <thead>
@@ -153,6 +153,40 @@ Main target data: DaysInHospital
 </div>
 
 </div>
+
+Missing data:
+                         Total   Percent
+LengthOfStay           2597392  0.973174
+DSFS                     52770  0.019772
+Vendor                   24856  0.009313
+ProviderID               16264  0.006094
+PrimaryConditionGroup    11410  0.004275
+Specialty                 8405  0.003149
+PlaceSvc                  7632  0.002860
+PCP                       7492  0.002807
+ProcedureGroup            3675  0.001377
+SupLOS                       0  0.000000
+CharlsonIndex                0  0.000000
+PayDelay                     0  0.000000
+Year                         0  0.000000
+MemberID                     0  0.000000
+
+Datatype:
+MemberID                   int64
+ProviderID               float64
+Vendor                   float64
+PCP                      float64
+Year                      object
+Specialty                 object
+PlaceSvc                  object
+PayDelay                  object
+LengthOfStay              object
+DSFS                      object
+PrimaryConditionGroup     object
+CharlsonIndex             object
+ProcedureGroup            object
+SupLOS                     int64
+dtype: object
 
 # 2.Feature Engineering
 
